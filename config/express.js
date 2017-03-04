@@ -24,52 +24,52 @@ import MainRouter from '../routes';
 const app = express();
 const env = app.get('env');
 
-app.disable('x-powered-by');
-app.enable('trust proxy');
+// app.disable('x-powered-by');
+// app.enable('trust proxy');
 
 /**
  * Setup for production only
  */
-if (env === 'production') {
-  app.use(morgan('combined'));
-}
-
-/**
- * Setup for deployed dev and live
- */
-if (env === 'development' || env === 'production') {
-  app.disable('view cache');
-
-  var root = path.resolve(path.join(config.get('clientsRoot')));
-
-  // resolved WWW_EJS_TEMPLATE_PATH path
-  app.set('clientsRoot', root);
-
-  // default client folder
-  app.set('appRootPath', path.join(root, 'client'));
-  app.use(express.static(app.get('appRootPath'), {index: false}));
-}
+// if (env === 'production') {
+//   app.use(morgan('combined'));
+// }
+//
+// /**
+//  * Setup for deployed dev and live
+//  */
+// if (env === 'development' || env === 'production') {
+//   app.disable('view cache');
+//
+//   var root = path.resolve(path.join(config.get('clientsRoot')));
+//
+//   // resolved WWW_EJS_TEMPLATE_PATH path
+//   app.set('clientsRoot', root);
+//
+//   // default client folder
+//   app.set('appRootPath', path.join(root, 'client'));
+//   app.use(express.static(app.get('appRootPath'), {index: false}));
+// }
 
 /**
  * Setup for local dev
  */
 if (env === 'local') {
-  app.set('appRootPath', path.join(config.root, '.tmp/serve'));
-  app.use(express.static(path.join(config.root, 'client'), {index: false}));
+  // app.set('appRootPath', path.join(config.root, '.tmp/serve'));
+  // app.use(express.static(path.join(config.root, 'client'), {index: false}));
   app.use(morgan('dev'));
 }
 
 /**
  * Setup view engine EJS
  */
-ejs.delimiter = '?'; // faster to type <? ?>
-app.set('views', [
-  app.get('appRootPath'),
-  config.root + '/server/views'
-]);
-
-app.set('view engine', 'ejs');
-app.engine('ejs', ejs.renderFile);
+// ejs.delimiter = '?'; // faster to type <? ?>
+// app.set('views', [
+//   app.get('appRootPath'),
+//   config.root + '/server/views'
+// ]);
+//
+// app.set('view engine', 'ejs');
+// app.engine('ejs', ejs.renderFile);
 
 /**
  * compress all requests
@@ -98,12 +98,12 @@ app.use(cookieParser());
 /**
  * Initialize Passport
  */
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 /**
  * detect the domain initiating the request
  */
-app.use(domainDetect);
+// app.use(domainDetect);
 
 /**
  * Mount Application routes
@@ -113,9 +113,9 @@ app.use(MainRouter);
 /**
  * Configure express winston logging
  */
-app.use(expressWinston.errorLogger({
-  transports: getTransportsInstance()
-}));
+// app.use(expressWinston.errorLogger({
+//   transports: getTransportsInstance()
+// }));
 
 /**
  * Error handling middleware

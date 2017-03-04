@@ -1,6 +1,5 @@
 {
-  "name": "tajawal",
-  "link": "http://tajawal.com",
+  "name": "test-api",
   "version": "1.0.0",
   "main": "server/app.js",
   "scripts": {
@@ -58,7 +57,6 @@
     "mongoose-validator": "^1.2.5",
     "morgan": "~1.7.0",
     "ms": "^0.7.1",
-    "node-mongoose-soft-delete": "thaerlabs/node-mongoose-soft-delete",
     "passport": "~0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-facebook-token": "^3.3.0",
