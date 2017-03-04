@@ -1,4 +1,4 @@
-# Welcome to tajawal
+# Welcome
 
 ## Table of contents
   1. [General documentation](#general-documentation)
