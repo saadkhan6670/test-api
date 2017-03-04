@@ -1,0 +1,90 @@
+{
+  "env": "NODE_ENV",
+  "apiNodeEnv": "API_NODE_ENV",
+  "ip": "IP",
+  "port": "PORT",
+  "seedDB": "WWW_SEEDDB_DEV",
+  "cacheStore": "WWW_CACHE_STORE",
+  "cacheTTL": "WWW_CACHE_TTL",
+  "secrets": {
+    "session": "WWW_SESSION_SECRET"
+  },
+  "mongo": {
+    "uri": "MONGODB_URL"
+  },
+  "redis": {
+    "host": "WWW_REDIS_HOST",
+    "port": "WWW_REDIS_PORT",
+    "auth_pass": "WWW_REDIS_PASSWORD",
+    "db": "WWW_REDIS_DB"
+  },
+  "facebook": {
+    "clientID": "FACEBOOK_ID",
+    "clientSecret": "FACEBOOK_SECRET"
+  },
+  "twitter": {
+    "consumerKey": "TWITTER_ID",
+    "consumerSecret": "TWITTER_SECRET"
+  },
+  "facebook_ae": {
+    "clientID": "FACEBOOK_ID_AE",
+    "clientSecret": "FACEBOOK_SECRET_AE"
+  },
+  "twitter_ae": {
+    "consumerKey": "TWITTER_ID_AE",
+    "consumerSecret": "TWITTER_SECRET_AE"
+  },
+  "facebook_sa": {
+    "clientID": "FACEBOOK_ID_SA",
+    "clientSecret": "FACEBOOK_SECRET_SA"
+  },
+  "twitter_sa": {
+    "consumerKey": "TWITTER_ID_SA",
+    "consumerSecret": "TWITTER_SECRET_SA"
+  },
+  "resetPasswordRequestTimeout": "RESET_PASSWORD_REQUEST_TIMEOUT",
+  "logFilePath": "WWW_LOG_FILE_PATH",
+  "logFileSize": "WWW_LOG_FILE_SIZE",
+  "infoApi": {
+    "url": "INFO_API_URL"
+  },
+  "backendApi": {
+    "url": "BACKEND_API_URL",
+    "version": "BACKEND_API_VERSION"
+  },
+  "hotelApi": {
+    "url": "HOTEL_API_URL",
+    "version": "HOTEL_API_VERSION"
+  },
+  "hubApi": {
+    "url": "HUB_API_URL",
+    "version": "HUB_API_VERSION"
+  },
+  "jwtExpiresIn": "JWT_EXPIRES_IN",
+  "cms": {
+    "url": "CMS_URL",
+    "username": "CMS_USER",
+    "password": "CMS_PASS"
+  },
+  "jobManager": {
+    "url": "JOB_MANAGER_URL",
+    "username": "JOB_MANAGER_USERNAME",
+    "password": "JOB_MANAGER_PASSWORD"
+  },
+  "oAuth": {
+    "username": "WWW_OAUTH_USER",
+    "password": "WWW_OAUTH_PASS",
+    "client_id": "WWW_OAUTH_CLIENT_ID",
+    "client_secret": "WWW_OAUTH_SECRET"
+  },
+  "defaultCountryCode": "WWW_DEFAULT_COUNTRY_CODE",
+  "s3": {
+    "accessKeyId": "WWW_AWS_ACCESS_KEY",
+    "secretAccessKey": "WWW_AWS_SECRET_KEY",
+    "bucket": "WWW_AWS_BUCKET",
+    "prefix": "WWW_AWS_BUCKET_SUBFOLDER"
+  },
+  "loadAssetFromS3": "WWW_LOAD_ASSET_FROM_S3",
+  "pinTheMapTweets": "WWW_PIN_THE_MAP_TWEETS",
+  "clientsRoot": "WWW_CLIENTS_ROOT"
+}

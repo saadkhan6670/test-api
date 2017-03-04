@@ -1,0 +1,15 @@
+{
+  "lists": [
+    {
+      "key": "tjwl",
+      "label": "Send me the latest travel inspiration, insider tips and deals from tajawal",
+      "frequency": [
+        {
+          "default": true,
+          "key": "daily",
+          "label": "Yes"
+        }
+      ]
+    }
+  ]
+}

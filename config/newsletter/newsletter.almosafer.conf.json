@@ -1,0 +1,15 @@
+{
+  "lists": [
+    {
+      "key": "alm",
+      "label": "Send me the latest travel inspiration, insider tips and deals from almosafer",
+      "frequency": [
+        {
+          "default": true,
+          "key": "daily",
+          "label": "Yes"
+        }
+      ]
+    }
+  ]
+}
