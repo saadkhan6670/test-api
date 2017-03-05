@@ -19,3 +19,5 @@ router.use('/user', require('./user'));
 // router.use('/air/', require('./air'));
 // router.use('/cancellation/', require('./cancellation'));
 // router.use('/system', require('./system'));
+
+module.exports = router;

@@ -4,12 +4,6 @@
 
 'use strict';
 import { Router } from 'express';
-import passport from 'passport';
-import errors from '../components/errors';
-import { sessionMiddleware } from '../middleware/session.middleware';
-import passportMw from '../middleware/passport.middleware';
-import fingerPrintMw from '../middleware/fingerprint.middleware';
-import headerFilterMw from '../middleware/headerfilter.middleware';
 
 /**
  *

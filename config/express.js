@@ -17,8 +17,6 @@ import path from 'path';
 import expressWinston from 'express-winston';
 import config from './environment';
 import {getTransportsInstance} from './winston';
-import passport from 'passport';
-import {domainDetect} from '../middleware/domaindetect.middleware';
 import MainRouter from '../routes';
 
 const app = express();

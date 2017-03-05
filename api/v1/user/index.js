@@ -2,8 +2,6 @@
 
 import express from 'express';
 import UserController from './user.controller';
-import authMw from '../../../middleware/auth.middleware';
-import resTransformerMw from '../../../middleware/response.transformer.middleware';
 
 var router = express.Router();
 
@@ -12,7 +10,7 @@ var router = express.Router();
 
 //router.delete('/:id', auth.hasRole('admin'), UserController.destroy);
 router.post('/create', UserController.create);
-router.put('/update', UserController.update)
+router.put('/update', UserController.update);
 // router.get('/me', authMw.isAuthenticated(), UserController.index);
 // router.put('/password', authMw.isAuthenticated(), UserController.changePassword);
 // router.put('/:id', authMw.isAuthenticated(), UserController.update);
